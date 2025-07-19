@@ -42,6 +42,12 @@
         .text-brand-accent { color: var(--brand-accent); }
         .border-brand-teal { border-color: var(--brand-teal); }
         .hover\:bg-brand-accent:hover { background-color: var(--brand-accent); }
+        
+        /* Parallax effect styling */
+        .parallax-bg {
+            will-change: transform;
+            transition: transform 0.1s ease-out;
+        }
     </style>
     
     <!-- FAQ Schema Markup for SEO -->
@@ -133,9 +139,9 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="relative h-[70vh] min-h-[500px]">
+        <section class="relative h-[70vh] min-h-[500px] overflow-hidden">
             <div class="absolute inset-0">
-                <img src="images/header-imag.jpg" alt="A bright and clean living room" class="w-full h-full object-cover">
+                <img src="images/header-imag.jpg" alt="A bright and clean living room" class="w-full h-full object-cover parallax-bg" id="parallax-hero">
                 <div class="absolute inset-0 bg-black/50"></div>
             </div>
             <div class="relative h-full flex items-center justify-center">
@@ -711,6 +717,29 @@
             content.classList.toggle('hidden');
             icon.classList.toggle('rotate-180');
         });
+        
+        // Parallax effect for hero image
+        function parallaxEffect() {
+            const parallaxElement = document.getElementById('parallax-hero');
+            if (parallaxElement) {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.5;
+                parallaxElement.style.transform = `translateY(${rate}px)`;
+            }
+        }
+        
+        // Throttle scroll events for better performance
+        let ticking = false;
+        function updateParallax() {
+            if (!ticking) {
+                requestAnimationFrame(parallaxEffect);
+                ticking = true;
+                setTimeout(() => { ticking = false; }, 10);
+            }
+        }
+        
+        window.addEventListener('scroll', updateParallax);
+        window.addEventListener('load', parallaxEffect);
     </script>
 </body>
 </html>
