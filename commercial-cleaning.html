@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Cleaning - Queen City Cleaning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        :root {
+            --brand-teal: #274C4F;
+            --brand-light-teal: #EEF4F5;
+            --brand-accent: #456A6D;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .bg-brand-teal { background-color: var(--brand-teal); }
+        .bg-brand-light-teal { background-color: var(--brand-light-teal); }
+        .text-brand-teal { color: var(--brand-teal); }
+        .text-brand-accent { color: var(--brand-accent); }
+        .border-brand-teal { border-color: var(--brand-teal); }
+        .hover\:bg-brand-accent:hover { background-color: var(--brand-accent); }
+    </style>
+</head>
+<body class="bg-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="images/logo/Transparent Logo.PNG" alt="Queen City Cleaning Logo" class="h-12">
+                    <span class="text-xl font-bold text-brand-teal">Queen City Cleaning</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">Home</a>
+                    <a href="/#services" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">Services</a>
+                    <a href="/#faq" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">FAQ</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                     <a href="tel:716-520-2287" class="bg-brand-teal text-white py-2 px-6 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-md">Call to Schedule</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-brand-teal focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="/" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="/#services" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Services</a>
+            <a href="/#faq" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">FAQ</a>
+            <a href="tel:716-520-2287" class="block m-2 py-2 px-4 text-sm bg-brand-teal text-white text-center rounded-full font-semibold hover:bg-opacity-90">Call to Schedule</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 sm:py-24">
+        <div class="container mx-auto px-4">
+            <section id="commercial-cleaning">
+                <!-- Hero Section -->
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                    <div class="md:order-2">
+                        <h1 class="text-4xl md:text-5xl font-bold text-brand-teal">Professional Commercial Cleaning Services in Western New York</h1>
+                        <p class="text-gray-600 mt-4 leading-relaxed">Maintain a spotless, professional workspace that impresses clients and boosts employee productivity. Queen City Cleaning provides comprehensive commercial cleaning services for offices, retail spaces, medical facilities, and businesses throughout Buffalo, Rochester, Syracuse, and all of Western New York.</p>
+                        <p class="text-gray-600 mt-4 leading-relaxed">As a fully licensed, bonded, and insured commercial cleaning company, we understand the unique needs of Western NY businesses. Our flexible scheduling includes after-hours and weekend service to minimize disruption to your operations.</p>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="images/office-cleaning.jpg" alt="Professional commercial cleaning services Buffalo Rochester Syracuse Western NY" class="rounded-lg shadow-xl w-full h-auto max-h-96 object-cover">
+                    </div>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-teal text-center mb-12">Commercial Cleaning Services We Provide</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-brand-light-teal p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-brand-teal mb-4">Office Cleaning</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Daily workspace maintenance</li>
+                                <li>• Desk and surface sanitization</li>
+                                <li>• Restroom deep cleaning</li>
+                                <li>• Break room and kitchen areas</li>
+                                <li>• Trash removal and recycling</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-light-teal p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-brand-teal mb-4">Retail Spaces</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Customer area maintenance</li>
+                                <li>• Window and display cleaning</li>
+                                <li>• Floor care and maintenance</li>
+                                <li>• Fitting room sanitization</li>
+                                <li>• High-traffic area focus</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-light-teal p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-brand-teal mb-4">Medical Facilities</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Medical-grade sanitization</li>
+                                <li>• Waiting room maintenance</li>
+                                <li>• Examination room cleaning</li>
+                                <li>• HIPAA-compliant service</li>
+                                <li>• Specialized equipment care</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-light-teal p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-brand-teal mb-4">Educational Facilities</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Classroom deep cleaning</li>
+                                <li>• Student area sanitization</li>
+                                <li>• Common area maintenance</li>
+                                <li>• Cafeteria and food service areas</li>
+                                <li>• Child-safe cleaning products</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-light-teal p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-brand-teal mb-4">Industrial Spaces</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Warehouse floor maintenance</li>
+                                <li>• Equipment area cleaning</li>
+                                <li>• Safety compliance focus</li>
+                                <li>• Break area sanitization</li>
+                                <li>• Specialized industrial cleaning</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-light-teal p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-brand-teal mb-4">Property Management</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Common area maintenance</li>
+                                <li>• Lobby and entrance cleaning</li>
+                                <li>• Elevator and stairwell care</li>
+                                <li>• Tenant turnover cleaning</li>
+                                <li>• Regular building maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Area -->
+                <div class="mb-16 bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-teal text-center mb-8">Serving All of Western New York</h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <p class="text-gray-600 leading-relaxed mb-4">Queen City Cleaning proudly serves businesses throughout Western New York within a 75-mile radius of Boston, NY. Our extensive service area ensures that whether you're operating in downtown Buffalo, suburban Rochester, metropolitan Syracuse, or anywhere in between, we can provide reliable commercial cleaning services tailored to your business needs.</p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <h4 class="font-bold text-brand-teal mb-2">Major Cities Served:</h4>
+                                    <ul class="space-y-1 text-gray-600">
+                                        <li>• Buffalo & Metro Area</li>
+                                        <li>• Rochester & Suburbs</li>
+                                        <li>• Syracuse & Surrounding Areas</li>
+                                        <li>• Niagara Falls Region</li>
+                                        <li>• Jamestown & Southern Tier</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-brand-teal mb-2">Service Features:</h4>
+                                    <ul class="space-y-1 text-gray-600">
+                                        <li>• 75-Mile Coverage Radius</li>
+                                        <li>• After-Hours Availability</li>
+                                        <li>• Weekend Service Options</li>
+                                        <li>• Emergency Cleaning Response</li>
+                                        <li>• Local Business Focus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/commercial-cleaning.jpg" alt="Western New York commercial cleaning coverage area map Buffalo Rochester Syracuse" class="rounded-lg shadow-md w-full h-auto max-h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-teal text-center mb-12">Why Western NY Businesses Choose Queen City Cleaning</h2>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-6 h-6 bg-brand-teal rounded-full flex-shrink-0 mt-1"></div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-brand-teal">Licensed, Bonded & Insured</h3>
+                                    <p class="text-gray-600">Full commercial insurance coverage and bonding gives you complete peace of mind when trusting us with your business space.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-6 h-6 bg-brand-teal rounded-full flex-shrink-0 mt-1"></div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-brand-teal">Flexible Scheduling</h3>
+                                    <p class="text-gray-600">We work around your business hours with after-hours, weekend, and emergency cleaning services available.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-6 h-6 bg-brand-teal rounded-full flex-shrink-0 mt-1"></div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-brand-teal">Professional Equipment & Supplies</h3>
+                                    <p class="text-gray-600">We bring all professional-grade cleaning equipment and supplies, including eco-friendly options for environmentally conscious businesses.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-6 h-6 bg-brand-teal rounded-full flex-shrink-0 mt-1"></div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-brand-teal">Local Western NY Company</h3>
+                                    <p class="text-gray-600">As a local family-owned business, we understand the Western NY business community and provide personalized service you can trust.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pexels-heyho-7534210.jpg" alt="Professional commercial cleaning team Buffalo Rochester Syracuse" class="rounded-lg shadow-xl w-full h-auto max-h-96 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="text-center bg-brand-light-teal p-8 rounded-lg">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-teal mb-4">Ready to Get Started?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mb-8">Every commercial space is unique. We provide custom quotes based on your facility size, cleaning frequency, and specific service requirements. Contact Queen City Cleaning today to discuss your Western New York business cleaning needs and receive a personalized estimate.</p>
+                    <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                        <a href="tel:716-520-2287" class="inline-block bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg text-lg">Call (716) 520-2287</a>
+                        <a href="mailto:queencleaning716@gmail.com" class="inline-block bg-white text-brand-teal border-2 border-brand-teal py-3 px-8 rounded-full font-semibold hover:bg-brand-teal hover:text-white transition-colors duration-300 shadow-lg text-lg">Email for Quote</a>
+                    </div>
+                    <p class="text-gray-600 mt-6 text-sm">Serving all businesses within 75 miles of Boston, NY • Licensed, Bonded & Insured</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-teal text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold">Queen City Cleaning</h3>
+                    <p class="mt-2 text-gray-300">Your trusted partner for a cleaner, happier home.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="/#services" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="/#faq" class="text-gray-300 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Contact Us</h3>
+                    <ul class="mt-4 space-y-2 text-gray-300">
+                        <li><a href="mailto:queencleaning716@gmail.com" class="hover:text-white">queencleaning716@gmail.com</a></li>
+                        <li><a href="tel:716-520-2287" class="hover:text-white">716-520-2287</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Queen City Cleaning. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

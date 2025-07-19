@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Queen City Cleaning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --brand-teal: #274C4F;
+            --brand-light-teal: #EEF4F5;
+            --brand-accent: #456A6D;
+        }
+        .bg-brand-teal { background-color: var(--brand-teal); }
+        .bg-brand-light-teal { background-color: var(--brand-light-teal); }
+        .text-brand-teal { color: var(--brand-teal); }
+        .text-brand-accent { color: var(--brand-accent); }
+        .border-brand-teal { border-color: var(--brand-teal); }
+        .hover\:bg-brand-accent:hover { background-color: var(--brand-accent); }
+    </style>
+</head>
+<body class="bg-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="images/logo/Transparent Logo.PNG" alt="Queen City Cleaning Logo" class="h-12">
+                    <span class="text-xl font-bold text-brand-teal">Queen City Cleaning</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">Home</a>
+                    <a href="/#faq" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">FAQ</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                     <a href="tel:716-520-2287" class="bg-brand-teal text-white py-2 px-6 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-md">Call to Schedule</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-brand-teal focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="/" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="/#faq" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">FAQ</a>
+            <a href="tel:716-520-2287" class="block m-2 py-2 px-4 text-sm bg-brand-teal text-white text-center rounded-full font-semibold hover:bg-opacity-90">Call to Schedule</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto">
+            <!-- General Cleaning Section -->
+            <section id="general" class="mb-16">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-brand-teal">General Cleaning</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">For all our general cleans we offer weekly, bi-weekly, and monthly services. These are standard weekly cleans you would do yourself. It includes dusting, sweeping, mopping, vacuuming, polishing. Before any routine services a Deep Clean must be done of your home to give it a fresh start. It will be easier to maintain your home, along with ensuring that we hit hard to reach areas, to remove any stubborn buildup.</p>
+                    </div>
+                    <div class="bg-brand-light-teal p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-brand-teal mb-4">Pricing</h3>
+                        <p class="text-gray-700 font-semibold text-lg">$30 / Room</p>
+                        <p class="text-gray-600 text-sm mb-4">(Minimum of 4 rooms)</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Four Rooms: $120.00</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Five Rooms: $150.00</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Six Rooms: $180.00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="tel:716-520-2287" class="inline-block md:hidden bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg">Click to Call: 716-520-2287</a>
+                    <p class="hidden md:block text-2xl font-bold text-brand-teal">Call Us: 716-520-2287</p>
+                </div>
+            </section>
+
+            <hr class="my-16 border-gray-200">
+
+            <!-- Deep Cleaning Section -->
+            <section id="deep" class="mb-16">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <h2 class="text-4xl font-bold text-brand-teal">Deep Cleaning</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">A thorough Top to Bottom clean of your home, tackling hard to reach areas often missed. This involves moving furniture, cleaning inside appliances, baseboards, interior windows, and more. We recommend a deep clean at least twice a year to keep your family safe from accumulated dust and to rejuvenate your home.</p>
+                    </div>
+                    <div class="bg-brand-light-teal p-8 rounded-lg shadow-lg md:order-1">
+                        <h3 class="text-2xl font-bold text-brand-teal mb-4">Pricing</h3>
+                        <p class="text-gray-700 font-semibold text-lg">$60 / Room</p>
+                        <p class="text-gray-600 text-sm mb-4">(Minimum of 4 rooms)</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Four Rooms: $250</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Five Rooms: $300</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Six Rooms: $360</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-8 text-center">
+                    <a href="tel:716-520-2287" class="inline-block md:hidden bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg">Click to Call: 716-520-2287</a>
+                    <p class="hidden md:block text-2xl font-bold text-brand-teal">Call Us: 716-520-2287</p>
+                </div>
+            </section>
+
+            <hr class="my-16 border-gray-200">
+
+            <!-- Move In/Out Cleaning Section -->
+            <section id="move" class="mb-16">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-brand-teal">Move In/Out Cleaning</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">We KNOW moving is a job in itself. We offer an extensive deep cleaning after you move out, or before you move in. We promise a clean space, allowing you to focus on creating memories in your new home! We cater to homeowners, landlords, and tenants.</p>
+                    </div>
+                    <div class="bg-brand-light-teal p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-brand-teal mb-4">Pricing</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Apartment (under 1000 sqft): $150</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Apartment (1001-1350 sqft): $200</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-brand-teal mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>House (1400+ sqft): Starting at $230</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-8 text-center">
+                    <a href="tel:716-520-2287" class="inline-block md:hidden bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg">Click to Call: 716-520-2287</a>
+                    <p class="hidden md:block text-2xl font-bold text-brand-teal">Call Us: 716-520-2287</p>
+                </div>
+            </section>
+
+            <hr class="my-16 border-gray-200">
+
+            <!-- Commercial Cleaning Section -->
+            <section id="commercial">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <h2 class="text-4xl font-bold text-brand-teal">Commercial Cleaning</h2>
+                        <p class="text-gray-600 mt-4 leading-relaxed">A clean and healthy work environment is crucial for productivity and employee well-being. We provide professional cleaning services for offices and commercial spaces, tailored to your specific needs.</p>
+                    </div>
+                    <div class="bg-brand-light-teal p-8 rounded-lg shadow-lg md:order-1">
+                        <h3 class="text-2xl font-bold text-brand-teal mb-4">Custom Quotes</h3>
+                        <p class="text-gray-600">Every commercial space is unique. Contact us for a personalized quote based on your requirements.</p>
+                    </div>
+                </div>
+                 <div class="mt-8 text-center">
+                    <a href="tel:716-520-2287" class="inline-block md:hidden bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg">Click to Call: 716-520-2287</a>
+                    <p class="hidden md:block text-2xl font-bold text-brand-teal">Call Us: 716-520-2287</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-teal text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold">Queen City Cleaning</h3>
+                    <p class="mt-2 text-gray-300">Your trusted partner for a cleaner, happier home.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="/#faq" class="text-gray-300 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Contact Us</h3>
+                    <ul class="mt-4 space-y-2 text-gray-300">
+                        <li><a href="mailto:queencleaning716@gmail.com" class="hover:text-white">queencleaning716@gmail.com</a></li>
+                        <li><a href="tel:716-520-2287" class="hover:text-white">716-520-2287</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Queen City Cleaning. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
