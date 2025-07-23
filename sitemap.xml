@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://queencitycleaning.com/</loc>
+        <lastmod>2024-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://queencitycleaning.com/images/header-imag.webp</image:loc>
+            <image:title>Professional House Cleaning Western New York</image:title>
+            <image:caption>Clean living room showcasing Queen City Cleaning's professional house cleaning services in Western NY</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://queencitycleaning.com/images/logo/transparent-logo.webp</image:loc>
+            <image:title>Queen City Cleaning Logo</image:title>
+            <image:caption>Queen City Cleaning - Professional cleaning services in Buffalo, Rochester, Syracuse</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://queencitycleaning.com/general-cleaning.html</loc>
+        <lastmod>2024-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://queencitycleaning.com/deep-cleaning.html</loc>
+        <lastmod>2024-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://queencitycleaning.com/move-in-out-cleaning.html</loc>
+        <lastmod>2024-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://queencitycleaning.com/commercial-cleaning.html</loc>
+        <lastmod>2024-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://queencitycleaning.com/services.html</loc>
+        <lastmod>2024-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
