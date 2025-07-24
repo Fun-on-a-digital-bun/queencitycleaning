@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move In/Out Cleaning - Queen City Cleaning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        :root {
+            --brand-teal: #274C4F;
+            --brand-light-teal: #EEF4F5;
+            --brand-accent: #456A6D;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .bg-brand-teal { background-color: var(--brand-teal); }
+        .bg-brand-light-teal { background-color: var(--brand-light-teal); }
+        .text-brand-teal { color: var(--brand-teal); }
+        .text-brand-accent { color: var(--brand-accent); }
+        .border-brand-teal { border-color: var(--brand-teal); }
+        .hover\:bg-brand-accent:hover { background-color: var(--brand-accent); }
+    </style>
+</head>
+<body class="bg-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="images/logo/Transparent Logo.PNG" alt="Queen City Cleaning Logo" class="h-12">
+                    <span class="text-xl font-bold text-brand-teal">Queen City Cleaning</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">Home</a>
+                    <a href="/#services" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">Services</a>
+                    <a href="/#faq" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">FAQ</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                     <a href="tel:716-520-2287" class="bg-brand-teal text-white py-2 px-6 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-md">Call to Schedule</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-brand-teal focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="/" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="/#services" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Services</a>
+            <a href="/#faq" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">FAQ</a>
+            <a href="tel:716-520-2287" class="block m-2 py-2 px-4 text-sm bg-brand-teal text-white text-center rounded-full font-semibold hover:bg-opacity-90">Call to Schedule</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 sm:py-24">
+        <div class="container mx-auto px-4">
+            <section id="move-out-cleaning">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-brand-teal">Move In/Out Cleaning</h1>
+                        <p class="text-gray-600 mt-4 leading-relaxed">We KNOW moving is a job in itself. Between cleaning, packing, moving, and unpacking it can become very stressful. Queen City caters to homeowners by cleaning before you move into your new home, and we clean your old space once everything is moved, allowing you to focus on creating memories in your new home!</p>
+                        <p class="text-gray-600 mt-4 leading-relaxed">We also cater to landlords and tenants to ensure a smooth transition.</p>
+                    </div>
+                    <div>
+                        <img src="images/logo/Move-Out-Cleaning-Services.jpeg" alt="An empty, clean room" class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-teal text-center mb-12">Move In/Out Pricing</h2>
+                    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                        <div class="bg-brand-light-teal p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div class="text-center mb-4">
+                                <h3 class="text-2xl font-bold text-brand-teal mb-2">Apartments</h3>
+                                <div class="bg-brand-teal text-white px-4 py-2 rounded-full text-sm font-bold mx-auto w-fit shadow-md">By Square Footage</div>
+                            </div>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex justify-between items-center py-2 border-b border-gray-300"><span>Up to 1000 sqft:</span> <span class="font-bold text-brand-accent">$150</span></li>
+                                <li class="flex justify-between items-center py-2"><span>1001 - 1350 sqft:</span> <span class="font-bold text-brand-accent">$200</span></li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-light-teal p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div class="text-center mb-4">
+                                <h3 class="text-2xl font-bold text-brand-teal mb-2">Houses</h3>
+                                <div class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-bold mx-auto w-fit shadow-md">By Square Footage</div>
+                            </div>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex justify-between items-center py-2 border-b border-gray-300"><span>1400 - 1999 sqft:</span> <span class="font-bold text-brand-accent">$280</span></li>
+                                <li class="flex justify-between items-center py-2 border-b border-gray-300"><span>2000 - 2499 sqft:</span> <span class="font-bold text-brand-accent">$320</span></li>
+                                <li class="flex justify-between items-center py-2"><span>2500 - 2999 sqft:</span> <span class="font-bold text-brand-accent">$370</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center mt-12">
+                        <a href="tel:716-520-2287" class="bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg text-lg">Get a Quote</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-teal text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold">Queen City Cleaning</h3>
+                    <p class="mt-2 text-gray-300">Your trusted partner for a cleaner, happier home.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="/#services" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="/#faq" class="text-gray-300 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Contact Us</h3>
+                    <ul class="mt-4 space-y-2 text-gray-300">
+                        <li><a href="mailto:queencleaning716@gmail.com" class="hover:text-white">queencleaning716@gmail.com</a></li>
+                        <li><a href="tel:716-520-2287" class="hover:text-white">716-520-2287</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Queen City Cleaning. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

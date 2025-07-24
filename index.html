@@ -77,13 +77,16 @@
             left: 0;
         }
         
-        /* Mobile parallax optimization */
+        /* Mobile parallax optimization - prevent enlargement */
         @media (max-width: 768px) {
             .parallax-bg {
-                height: 105%;
-                top: -2.5%;
+                height: 100%;
+                top: 0;
+                min-height: 100%;
+                max-height: 100%;
                 backface-visibility: hidden;
                 perspective: 1000px;
+                transform-style: preserve-3d;
             }
         }
     </style>
@@ -460,7 +463,7 @@
                             <h3 class="font-bold text-xl text-teal-800 mb-2">Regular House Cleaning</h3>
                             <p class="text-gray-600 mt-2 flex-grow leading-relaxed">Professional weekly, bi-weekly, and monthly cleaning services including dusting, vacuuming, mopping, and sanitizing. Perfect for busy families who want to maintain a consistently clean home.</p>
                             <div class="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-bold mt-4 shadow-md">Starting at $65/visit</div>
-                            <a href="general-cleaning.html" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                            <a href="/services/general-cleaning/" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
                                 <span>View Pricing & Details</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -484,7 +487,7 @@
                             <h3 class="font-bold text-xl text-teal-800 mb-2">Deep Cleaning Service</h3>
                             <p class="text-gray-600 mt-2 flex-grow leading-relaxed">Comprehensive top-to-bottom cleaning including baseboards, interior windows, appliance cleaning, and hard-to-reach areas. Required before starting regular maintenance schedules.</p>
                             <div class="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-bold mt-4 shadow-md">$60 per room (4 room min)</div>
-                            <a href="deep-cleaning.html" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                            <a href="/services/deep-cleaning/" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
                                 <span>Get Deep Clean Quote</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -508,7 +511,7 @@
                             <h3 class="font-bold text-xl text-teal-800 mb-2">Move In/Out Cleaning</h3>
                             <p class="text-gray-600 mt-2 flex-grow leading-relaxed">Thorough cleaning for empty homes and apartments. Perfect for landlords, tenants, and new homeowners. Helps maximize security deposits and ensures move-in readiness.</p>
                             <div class="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-bold mt-4 shadow-md">$150-$370 by sq footage</div>
-                            <a href="move-in-out-cleaning.html" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                            <a href="/services/move-in-out-cleaning/" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
                                 <span>See Move-Out Rates</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -532,7 +535,7 @@
                             <h3 class="font-bold text-xl text-teal-800 mb-2">Commercial Cleaning</h3>
                             <p class="text-gray-600 mt-2 flex-grow leading-relaxed">Professional office and workspace cleaning for businesses across Western NY. Flexible scheduling, customized services, and reliable maintenance for productive work environments.</p>
                             <div class="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-bold mt-4 shadow-md">Custom quotes available</div>
-                            <a href="commercial-cleaning.html" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                            <a href="/services/commercial-cleaning/" class="mt-4 inline-flex items-center space-x-2 bg-teal-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg group-hover:shadow-xl">
                                 <span>Request Business Quote</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -577,7 +580,7 @@
                                 <span class="text-gray-700 font-medium">Licensed, bonded, and fully insured</span>
                             </div>
                         </div>
-                        <a href="commercial-cleaning.html" class="mt-8 inline-block bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg">Get Your Free Commercial Quote</a>
+                        <a href="/services/commercial-cleaning/" class="mt-8 inline-block bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-accent transition-colors duration-300 shadow-lg">Get Your Free Commercial Quote</a>
                     </div>
                     <div>
                         <img src="images/office-cleaning.webp" alt="Clean modern office space in Buffalo Rochester Syracuse area" class="rounded-lg shadow-xl w-full h-full min-h-[600px] object-cover" loading="lazy">
@@ -1118,9 +1121,9 @@
                     <h3 class="text-xl font-bold">Services</h3>
                     <ul class="mt-4 space-y-2">
                         <li><a href="general-cleaning.html" class="text-gray-300 hover:text-white">General Cleaning</a></li>
-                        <li><a href="deep-cleaning.html" class="text-gray-300 hover:text-white">Deep Cleaning</a></li>
-                        <li><a href="move-in-out-cleaning.html" class="text-gray-300 hover:text-white">Move In/Out Cleaning</a></li>
-                        <li><a href="commercial-cleaning.html" class="text-gray-300 hover:text-white">Commercial Cleaning</a></li>
+                        <li><a href="/services/deep-cleaning/" class="text-gray-300 hover:text-white">Deep Cleaning</a></li>
+                        <li><a href="/services/move-in-out-cleaning/" class="text-gray-300 hover:text-white">Move In/Out Cleaning</a></li>
+                        <li><a href="/services/commercial-cleaning/" class="text-gray-300 hover:text-white">Commercial Cleaning</a></li>
                     </ul>
                 </div>
                 <div>
