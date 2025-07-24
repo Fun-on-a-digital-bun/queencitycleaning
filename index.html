@@ -69,12 +69,22 @@
         .parallax-bg {
             will-change: transform;
             transform-origin: center;
-            height: 120%;
+            height: 110%;
             width: 100%;
             object-fit: cover;
             position: absolute;
-            top: -10%;
+            top: -5%;
             left: 0;
+        }
+        
+        /* Mobile parallax optimization */
+        @media (max-width: 768px) {
+            .parallax-bg {
+                height: 105%;
+                top: -2.5%;
+                backface-visibility: hidden;
+                perspective: 1000px;
+            }
         }
     </style>
     
@@ -1185,8 +1195,9 @@
             const parallaxElement = document.getElementById('parallax-hero');
             if (parallaxElement) {
                 const scrolled = window.pageYOffset;
-                const rate = scrolled * 0.3; // Positive value for downward movement
-                parallaxElement.style.transform = `translateY(${rate}px)`;
+                const isMobile = window.innerWidth <= 768;
+                const rate = scrolled * (isMobile ? 0.15 : 0.3); // Reduced rate for mobile
+                parallaxElement.style.transform = `translate3d(0, ${rate}px, 0)`;
             }
         }
         
